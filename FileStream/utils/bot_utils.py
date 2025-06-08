@@ -87,6 +87,7 @@ async def gen_link(_id):
 
     page_link = f"{Server.URL}watch/{_id}"
     stream_link = f"{Server.URL}dl/{_id}"
+    player_link = f"{Server.URL}player/{_id}"
     file_link = f"https://t.me/{FileStream.username}?start=file_{_id}"
 
     if "video" in mime_type:
@@ -119,6 +120,7 @@ async def gen_linkx(m:Message , _id, name: list):
 
     page_link = f"{Server.URL}watch/{_id}"
     stream_link = f"{Server.URL}dl/{_id}"
+    player_link = f"{Server.URL}player/{_id}"
     file_link = f"https://t.me/{FileStream.username}?start=file_{_id}"
 
     if "video" in mime_type:
