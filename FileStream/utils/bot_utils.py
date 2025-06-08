@@ -124,7 +124,7 @@ async def gen_linkx(m:Message , _id, name: list):
     file_link = f"https://t.me/{FileStream.username}?start=file_{_id}"
 
     if "video" in mime_type:
-        stream_text= LANG.STREAM_TEXT_X.format(file_name, file_size, stream_link, page_link)
+        stream_text= LANG.STREAM_TEXT_X.format(file_name, file_size, stream_link, player_link, page_link)
         reply_markup = InlineKeyboardMarkup(
             [
                 [InlineKeyboardButton("sᴛʀᴇᴀᴍ", url=page_link), InlineKeyboardButton("ᴅᴏᴡɴʟᴏᴀᴅ", url=stream_link)]
